@@ -1,0 +1,65 @@
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+#main-wrapper[data-layout="vertical"][data-sidebartype="full"]
+.topbar
+.top-navbar
+.navbar-header {
+  width: 100px !important;
+}
+
+.topbar .top-navbar .navbar-header .navbar-brand {
+  width: 100px !important;
+  padding: 0 20px !important;
+}
+
+.left-sidebar {
+  width: 100px !important;
+}
+
+#main-wrapper[data-layout="vertical"][data-sidebartype="full"]
+.page-wrapper {
+  margin-left: 100px !important;
+}
+
+.border-right {
+  border-right: 1px solid #eeeeee;
+}
+
+
+.forecast {
+  background: #736098;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px 0px;
+}
+
+.forecast .city_name {
+  font-size: 20px;
+}
+
+.forecast .country_name {
+  font-size: 13px;
+}
+
+.forecast .temperature {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.forecast .temperature span {
+  color: #f3f3f3;
+}
+
+.forecast .temperature span:after {
+  content: "\00B0";
+  color: #8596C9;
+  font-size: 50px;
+}

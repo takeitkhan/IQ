@@ -1,0 +1,15 @@
+select *, DATE_ADD(date(created_at), INTERVAL EXTRACT(HOUR FROM created_at) HOUR) as DATE_HOUR,
+       avg(temperature) as temperature
+from weather_history
+WHERE city = 'Abu Dhabi'
+group by date(created_at), EXTRACT(HOUR FROM created_at);
+
+
+SELECT *, count(*), AVG(temperature)
+  FROM weather_history
+  WHERE city = 'Abu Dhabi'
+  GROUP BY
+
+  DATE(`created_at`),
+HOUR(`created_at`),
+FLOOR( MINUTE(`created_at`) / 120);
